@@ -64,11 +64,9 @@ function compile {
 }
 
 function install {      
-   echo "Installing to ~/avade/";
-   mkdir -p ~/avade
-   cp -v dist/Avade.jar ~/avade/avade.jar
-   cp template.conf ~/avade/
-   cp reference.conf ~/avade/
+   echo "Installing to bin/";
+   mkdir -p bin
+   cp -v dist/OSStats.jar bin/OSStats.jar
 }
 
 if [ -z "$1" ]; then
